@@ -4,12 +4,15 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "./i18n";
+import { BrowserRouter } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.querySelector("#root"));
 root.render(
 	<React.StrictMode>
-		<React.Suspense fallback={'loading...'}>
-			<App />
+		<React.Suspense fallback={"loading..."}>
+			<BrowserRouter>
+				<App />
+			</BrowserRouter>
 		</React.Suspense>
 	</React.StrictMode>
 );
