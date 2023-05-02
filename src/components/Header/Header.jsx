@@ -5,8 +5,8 @@ import css from "./Header.module.css"
 
 
 const lngs = {
-	en: { nativeName: "English" },
-	ru: { nativeName: "Russian" },
+	en: { nativeName: "EN" },
+	ru: { nativeName: "RU" },
 };
 
 const Header = () => {
