@@ -1,6 +1,15 @@
 {
   "header": {
-    "learn": "hey english",
-    "description": "edit 1 and 2"
+    "Home": "Home",
+    "Components": "Components",
+    "Pages": "Pages",
+    "Documentation": "Documentation",
+    "Login": "Login",
+    "JoinUs": "Join Us",
+    "Services": "Services",
+    "Blog": "Blog",
+    "CaseStudies": "CaseStudies",
+    "Contacts": "Contacts",
+    "AboutUs": "AboutUs"
   }
 }

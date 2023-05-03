@@ -35,11 +35,10 @@ const Header = () => {
 	const location = useLocation();
 	const navigate = useNavigate();
 	const [PagesOpen, setPagesOpen] = useState(false);
+
 	const handlePagesOpen = () => {
 		setPagesOpen(!PagesOpen);
 	};
-
-	console.log(i18n.resolvedLanguage);
 
 	{
 		/* {Object.keys(lngs).map((lng) => (
@@ -58,13 +57,13 @@ const Header = () => {
 			<nav>
 				<img src={themeDark ? LogoDark : LogoLight} alt="" />
 				<Link to={"/"} className={css.nav_links}>
-					Home
+					{t("header.Home")}
 				</Link>
 				<Link to={"/Components"} className={css.nav_links}>
-					Components
+					{t("header.Components")}
 				</Link>
 				<p className={css.Pages} onClick={handlePagesOpen}>
-					Pages
+					{t("header.Pages")}
 					<img
 						className={PagesOpen ? css.Rotate_180_degree : null}
 						src={themeDark ? downArrowDark : downArrowLight}
@@ -72,12 +71,16 @@ const Header = () => {
 					/>
 				</p>
 				<Link to={"/Documentation"} className={css.nav_links}>
-					Documentation
+				{t("header.Documentation")}
 				</Link>
 			</nav>
 			<div className={css.Pages_options + ` ${PagesOpen ? "" : "hide"}`}>
 				{Object.keys(options).map((option) => (
-					<Button key={option} href={options[option]} text={option}>
+					<Button
+						key={option}
+						href={options[option]}
+						text={t(`header.${option}`)}
+						onClick={() => navigate(options[option])}>
 						{option}
 					</Button>
 				))}
@@ -109,8 +112,8 @@ const Header = () => {
 						/>
 					}
 				/>
-				<Button text={"Login"} />
-				<Button type={!themeDark ? "dark" : "white" }  text={"Join Us"} />
+				<Button text={t("header.Login")} />
+				<Button type={!themeDark ? "dark" : "white"} text={t("header.JoinUs")} />
 			</div>
 		</header>
 	);

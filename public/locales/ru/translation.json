@@ -1,6 +1,15 @@
 {
-  "header" : {
-  "learn" : "hey russian",
-  "description": "i'm russian"
+  "header": {
+    "Home": "главная",
+    "Components": "Компоненты",
+    "Pages" : "Страницы", 
+    "Documentation": "Документация",
+    "Login": "логин",
+    "JoinUs": "зарегистрироваться",
+    "Services": "Услуги",
+    "Blog": "Блог",
+    "CaseStudies": "Кейсы",
+    "Contacts": "Контакты",
+    "AboutUs": "О нас"
   }
 }
