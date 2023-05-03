@@ -1,0 +1,31 @@
+.button{
+  padding: 10px 15px; 
+  display: grid;
+  place-items: center;
+  background: none;
+  border: none;
+  border-radius: 10px;
+  transition: 0.2s;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.button:hover{
+  background: var(--bkgSecondary);
+  opacity: 0.6;
+}
+
+
+/* .button:active{
+  background: none;
+} */
+
+.button[type="white"]{
+  background: var(--textPraimary) !important;
+  color: var(--bkgPraimary);
+}
+.button[type="dark"]{
+  background: var(--textPraimary) !important;
+  color: var(--bkgPraimary);
+}
+

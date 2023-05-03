@@ -1,3 +1,85 @@
-.h1{
+.header {
+	background-color: var(--bkgPraimary);
+  display: flex;
+  height: 96px;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+}
+.header * {
+	color: var(--textSecondary);
+  text-decoration: none;
+}
+
+
+.header > nav { 
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.header > nav > * {
+  margin-right: 48px;
+}
+.header > nav > a:hover { 
   color: var(--textPraimary);
 }
+/* select */
+.Pages{
+  align-items: center;
+  color: var(--textPraimary);
+  cursor: pointer;
+  display: flex;
+  gap: 5px;
+  margin-left: 10px;
+  position: relative;
+  user-select: none;
+}
+
+.Rotate_180_degree{
+  transform: rotate(-180deg);
+}
+.Pages::before{
+  background: var(--MainOrange);
+    border-radius: 10px;
+    content: "";
+    height: 8px;
+    width: 8px;
+    position: absolute;
+    left: -15px;
+    top: 35%;
+}
+.Pages > img { 
+  position: absolute;
+  top: 10px;
+  right: -15px;
+}
+
+.Pages_options{
+  position: absolute;
+  background-color: var(--bkgPraimary);
+  margin: 0;
+  opacity: 1;
+  display: flex;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 80px;
+  left: 31%;
+  cursor: pointer;
+  line-height: inherit;
+  border-radius: 10px;
+  box-shadow: 0 0 15px var(--textSecondary);
+}
+.Pages_options > button{
+  width: 100%;
+}
+
+
+
+.header_left{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

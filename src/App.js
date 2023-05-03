@@ -10,6 +10,7 @@ import AboutUsPage from "./pages/AboutUsPage/AboutUsPage";
 import ServicesPage from "./pages/ServicesPage/ServicesPage";
 import Footer from "./components/Footer/Footer";
 import { Route, Routes } from "react-router-dom";
+import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 
 export const ThemeContext = createContext(null);
 
@@ -45,6 +46,7 @@ function App() {
 					<Route path="/Contacts" element={<ContactsPage />} />
 					<Route path="/AboutUs" element={<AboutUsPage />} />
 					<Route path="/Services" element={<ServicesPage />} />
+					<Route path="*" element={<NotFoundPage />} />
 				</Routes>
 				<Footer />
 			</div>
