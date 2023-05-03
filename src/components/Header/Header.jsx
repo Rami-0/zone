@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { useTranslation, Trans } from "react-i18next";
 import { ThemeContext } from "../../App";
 import css from "./Header.module.css";
@@ -35,12 +35,31 @@ const Header = () => {
 	const location = useLocation();
 	const navigate = useNavigate();
 	const [PagesOpen, setPagesOpen] = useState(false);
+	const [isScrolled, setIsScrolled] = useState(false);
+
+
+
+		useEffect(() => {
+			window.addEventListener('scroll', handleScroll);
+			return () => {
+				window.removeEventListener('scroll', handleScroll);
+			};
+		}, []);
+
+		const handleScroll = () => {
+			if (window.pageYOffset > 1) {
+				setIsScrolled(true);
+			} else{
+				setIsScrolled(false);
+			}
+		};
+	
 
 	const handlePagesOpen = () => {
 		setPagesOpen(!PagesOpen);
 	};
 	return (
-		<header className={`${css.header} container`}>
+		<header id="Header" className={`${css.header} container ${isScrolled ? "scrolled" : ''}`}>
 			<nav>
 				<img src={themeDark ? LogoDark : LogoLight} alt="" />
 				<Link to={"/"} className={css.nav_links}>
