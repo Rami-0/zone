@@ -1,11 +1,12 @@
 .header {
-	background-color: var(--bkgPraimary);
   display: flex;
   height: 96px;
   justify-content: space-between;
   position: fixed;
   width: 100%;
+  background: none;
 }
+
 .header * {
 	color: var(--textSecondary);
   text-decoration: none;
