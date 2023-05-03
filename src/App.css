@@ -39,23 +39,36 @@
 	/* width: 80%; */
 	padding: 0 10%;
 }
-.hide{ 
+.hide {
 	opacity: 0 !important;
 	display: none;
 }
 .App * {
-	font-size: 14px;
 	letter-spacing: 1px;
 	transition: 0.2s;
-}
-.first {
-	background-color: var(--bkgPraimary);
-	height: 100%;
-}
-.second {
-	background-color: var(--bkgSecondary);
-	height: 100%;
+	text-decoration: none;
 }
 .App {
 	text-align: center;
+	font-family: "Poppins", sans-serif;
+	background: var(--bkgPraimary);
+}
+.main_text {
+	color: var(--textPraimary) !important;
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 24px;
+}
+.secondary_text {
+	color: var(--textSecondary) !important;
+	font-family: "Poppins", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 26px;
+}
+.mainColorText { 
+	color: var(--textPraimary) !important;
 }
