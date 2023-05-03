@@ -35,6 +35,19 @@
 
 /* ----- */
 
+.container {
+	/* width: 80%; */
+	padding: 0 10%;
+}
+.hide{ 
+	opacity: 0 !important;
+	display: none;
+}
+.App * {
+	font-size: 14px;
+	letter-spacing: 1px;
+	transition: 0.2s;
+}
 .first {
 	background-color: var(--bkgPraimary);
 	height: 100%;
