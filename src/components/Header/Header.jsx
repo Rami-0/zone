@@ -39,19 +39,6 @@ const Header = () => {
 	const handlePagesOpen = () => {
 		setPagesOpen(!PagesOpen);
 	};
-
-	{
-		/* {Object.keys(lngs).map((lng) => (
-		<button
-			type="submit"
-			key={lng}
-			onClick={() => i18n.changeLanguage(lng)}
-			disabled={i18n.resolvedLanguage === lng}>
-			{lngs[lng].nativeName}
-		</button>
-	))}
-	<button onClick={ToggleTheme}> ToggleTheme </button> */
-	}
 	return (
 		<header className={`${css.header} container`}>
 			<nav>
@@ -71,7 +58,7 @@ const Header = () => {
 					/>
 				</p>
 				<Link to={"/Documentation"} className={css.nav_links}>
-				{t("header.Documentation")}
+					{t("header.Documentation")}
 				</Link>
 			</nav>
 			<div className={css.Pages_options + ` ${PagesOpen ? "" : "hide"}`}>
@@ -112,8 +99,11 @@ const Header = () => {
 						/>
 					}
 				/>
-				<Button text={t("header.Login")} />
-				<Button type={!themeDark ? "dark" : "white"} text={t("header.JoinUs")} />
+				<Button text={<p className="main_text">{t("header.Login")}</p>} />
+				<Button
+					type={!themeDark ? "dark" : "white"}
+					text={t("header.JoinUs")}
+				/>
 			</div>
 		</header>
 	);
