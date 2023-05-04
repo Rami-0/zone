@@ -2,13 +2,15 @@
   "header": {
     "Home": "главная",
     "Components": "Компоненты",
-    "Pages" : "Страницы", 
+    "Pages": "Страницы",
     "Documentation": "Документация",
     "Login": "логин",
     "JoinUs": "зарегистрироваться",
     "Services": "Услуги",
     "Blog": "Блог",
-    "CaseStudies": "Кейсы",
+    "Blog_details": "Подробности блога",
+    "CaseStudies_list": "Список кайсов",
+    "CaseStudies_details": "Детали кайсов",
     "Contacts": "Контакты",
     "AboutUs": "О нас"
   },
@@ -22,7 +24,7 @@
       "email-placeholder": "Электронная почта",
       "phone-placeholder": "Телефон",
       "website-placeholder": "URL-адрес веб-сайта",
-      "SendRequest" : "Отправить запрос"
+      "SendRequest": "Отправить запрос"
     }
   }
 }
