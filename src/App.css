@@ -70,8 +70,19 @@
 	font-size: 14px;
 	line-height: 26px;
 }
+.secondary_mid_text {
+	color: var(--textSecondary) !important;
+	font-family: "Poppins", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 28px;
+}
 .mainColorText {
 	color: var(--textPraimary) !important;
+}
+.OrangeText{
+	color: var(--MainOrange) !important;
 }
 
 .scrolled {

@@ -1,0 +1,29 @@
+.section {
+	height: 100vh;
+	display: flex;
+	padding-top: 200px;
+}
+.main {
+	text-align: start;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	height: 400px;
+}
+.buttons {
+	display: flex;
+	gap: 24px;
+}
+.buttons span {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+.playIcon_text {
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 15px;
+	line-height: 26px;
+	color: var(--textPraimary);
+}
