@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+import LatestPosts from "../../components/LatestPosts/LatestPosts";
 
 const AboutUsPage = () => {
-  return (
-    <div>AboutUsPage</div>
-  )
-}
+	return (
+		<section>
+			<h5>AboutUsPage</h5>
+      <LatestPosts/>
+		</section>
+	);
+};
 
-export default AboutUsPage
+export default AboutUsPage;

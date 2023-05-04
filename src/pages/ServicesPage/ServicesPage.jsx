@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+import LatestPosts from "../../components/LatestPosts/LatestPosts";
 
 const ServicesPage = () => {
-  return (
-    <div>ServicesPage</div>
-  )
-}
+	return (
+		<section>
+      <h5>ServicesPage</h5>
+			<LatestPosts />
+		</section>
+	);
+};
 
-export default ServicesPage
+export default ServicesPage;
