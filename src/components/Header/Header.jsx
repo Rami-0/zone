@@ -23,7 +23,9 @@ const options = {
 	Home: "/",
 	Services: "/Services",
 	Blog: "/Blog",
-	CaseStudies: "/CaseStudies",
+	Blog_details: "/Blog/details",
+	CaseStudies_list: "/CaseStudies/list",
+	CaseStudies_details: "/CaseStudies/details",
 	Contacts: "/Contacts",
 	AboutUs: "/AboutUs",
 };

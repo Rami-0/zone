@@ -42,6 +42,7 @@
 .hide {
 	opacity: 0 !important;
 	display: none;
+	pointer-events: none;
 }
 .App * {
 	letter-spacing: 1px;
@@ -69,10 +70,10 @@
 	font-size: 14px;
 	line-height: 26px;
 }
-.mainColorText { 
+.mainColorText {
 	color: var(--textPraimary) !important;
 }
 
-.scrolled{
+.scrolled {
 	background: var(--bkgPraimary) !important;
 }

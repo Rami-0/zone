@@ -1,0 +1,11 @@
+.LatestPostsContainer{
+  height: 110vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--bkgPraimay);
+  padding: 50px 0;
+}
+.title{
+  padding: 0 10%;
+  align-self: flex-start;
+}
