@@ -70,6 +70,15 @@
 	font-size: 14px;
 	line-height: 26px;
 }
+.secondary_small_text {
+	color: var(--textSecondary) !important;
+	font-family: "Poppins", sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 20px;
+}
+
 .secondary_mid_text {
 	color: var(--textSecondary) !important;
 	font-family: "Poppins", sans-serif;

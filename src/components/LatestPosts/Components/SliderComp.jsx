@@ -13,21 +13,21 @@ import pfp3 from "../assets/img.png";
 
 const data = [
 	{
-		date: "15 Dec 2020 . 8 min read",
+		date: "15 Dec 2020 • 8 min read",
 		mainText: "Any mechanical keyboard enthusiasts in design?",
 		img: "",
 		pfp: pfp1,
 		name: "Maddox Fletcher",
 	},
 	{
-		date: "04 Jul 2021 . 8 min read",
+		date: "04 Jul 2021 • 8 min read",
 		mainText: "How to design a product that can grow itself 10x in year:",
 		img: bkgPostImg,
 		pfp:pfp2,
 		name: "Cruz Truong",
 	},
 	{
-		date: "19 Apr 2019 . 8 min read ",
+		date: "19 Apr 2019 • 8 min read ",
 		mainText: "Any mechanical keyboard enthusiasts in design?",
 		img: "",
 		pfp:pfp3,
