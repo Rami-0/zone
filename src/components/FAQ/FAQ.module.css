@@ -27,7 +27,7 @@
 }
 
 .QestionWrapper {
-	width: 564px;
+	width: 610px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -44,6 +44,11 @@
 	justify-content: space-between;
 	align-items: center;
 	padding: 20px 0;
+}
+.question h6 {
+	margin-right: 30px;
+	width: 100%;
+	text-align: start;
 }
 .question > .button {
 	width: 24px;
