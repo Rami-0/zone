@@ -81,6 +81,7 @@
 	width: 264px;
 	height: 150px;
 	flex: none;
+	cursor: pointer;	
 	flex-grow: 1;
 }
 .card_workFlow > span {
@@ -104,6 +105,7 @@
 @media (min-width: 1280px) {
 	.card > button:hover {
 		background: rgba(250, 84, 28, 0.08);
+		box-shadow: 0px 0px 3px rgba(190, 147, 90, 0.5);
 	}
 	.card:nth-of-type(2) {
 		height: 424px;
@@ -111,7 +113,8 @@
 	.card:nth-of-type(3) {
 		height: 484px;
 	}
-
+	
+	
 	.card_workFlow:nth-of-type(1){
 		margin-top: 60px;
 	}
@@ -123,6 +126,10 @@
 	}
 	.card_workFlow:nth-of-type(4){
 		margin-top: 0;
+	}
+	.card_workFlow:hover{
+		transform: scale(1.05);
+		box-shadow: -8px 12px 32px rgba(74, 83, 85, 0.5);
 	}
 	
 }
