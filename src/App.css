@@ -97,3 +97,14 @@
 .scrolled {
 	background: var(--bkgPraimary) !important;
 }
+
+.sections_title{
+	display: flex;
+	width: 45%;
+	flex-direction: column;
+	text-align: start;
+	align-items: flex-start;
+}
+.sections_title > h2 { 
+	margin: 16px 0 24px 0;
+}
