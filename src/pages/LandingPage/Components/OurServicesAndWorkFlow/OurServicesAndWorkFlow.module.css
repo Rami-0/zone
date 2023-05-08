@@ -1,0 +1,128 @@
+.OurServices {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding-top: 120px;
+	padding-bottom: 80px;
+	gap: 40px;
+}
+
+.cards {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 0px;
+	gap: 32px;
+	flex: none;
+	order: 1;
+	align-self: stretch;
+	flex-grow: 0;
+	flex-wrap: wrap;
+}
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 40px 32px;
+	width: 264px;
+	height: 376px;
+	justify-content: center;
+	gap: 40px;
+	/* flex: 0 0 300px; */
+	flex: none;
+	order: 1;
+	flex-grow: 1;
+	background: var(--bkgSecondary);
+	box-shadow: -8px 8px 24px -4px rgba(0, 0, 0, 0.1);
+	border-radius: 16px;
+}
+.card > img {
+	width: 88px;
+	height: 88px;
+}
+.card > button {
+	padding: 15px 15px;
+	border-radius: 20px;
+	width: 40px;
+	height: 40px;
+}
+
+/* WorkFlow */
+
+.WorkFlow {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 40px;
+	height: fit-content;
+}
+
+.cards_workflow {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 0px;
+	gap: 32px;
+	min-height: 210px;
+	flex: none;
+	flex-wrap: wrap;
+	align-self: stretch;
+	flex-grow: 0;
+}
+.card_workFlow {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 16px;
+	gap: 24px;
+	box-shadow: -8px 12px 32px rgba(74, 83, 85, 0.2);
+	border-radius: 16px;
+	width: 264px;
+	height: 150px;
+	flex: none;
+	flex-grow: 1;
+}
+.card_workFlow > span {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 0px;
+	gap: 8px;
+	width: 232px;
+	height: 30px;
+	border-radius: 8px;
+	flex: none;
+	order: 1;
+	align-self: flex-end;
+	flex-grow: 0;
+}
+
+
+
+@media (min-width: 1280px) {
+	.card > button:hover {
+		background: rgba(250, 84, 28, 0.08);
+	}
+	.card:nth-of-type(2) {
+		height: 424px;
+	}
+	.card:nth-of-type(3) {
+		height: 484px;
+	}
+
+	.card_workFlow:nth-of-type(1){
+		margin-top: 60px;
+	}
+	.card_workFlow:nth-of-type(2){
+		margin-top: 40px;
+	}
+	.card_workFlow:nth-of-type(3){
+		margin-top: 20px;
+	}
+	.card_workFlow:nth-of-type(4){
+		margin-top: 0;
+	}
+	
+}

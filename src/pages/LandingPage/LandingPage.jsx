@@ -4,6 +4,7 @@ import LatestPosts from './../../components/LatestPosts/LatestPosts';
 import FirstSection from './Components/firstSection/FirstSection';
 import SecondSection from './Components/secondSection/SecondSection';
 import FAQ from './../../components/FAQ/FAQ';
+import OurServicesAndWorkFlow from './Components/OurServicesAndWorkFlow/OurServicesAndWorkFlow';
 
 const LandingPage = () => {
 	const navigator = useNavigate();
@@ -13,6 +14,7 @@ const LandingPage = () => {
 			<SecondSection/>
 			<LatestPosts/>
 			<FAQ/>
+			<OurServicesAndWorkFlow/>
 
 		</section>
 	);
