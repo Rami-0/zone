@@ -1,0 +1,71 @@
+* {
+	/* border: 2px solid red; */
+}
+.Big_Card_OurWork {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 0px;
+	width: 564px;
+	height: 372px;
+	box-shadow: -24px 24px 72px -8px rgba(100, 105, 110, 0.24);
+	border-radius: 16px;
+	flex: none;
+	flex-grow: 1;
+	padding: 6px;
+}
+.Big_Card_OurWork > img {
+	border-radius: 16px;
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+}
+.Big_Card_OurWork > span {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 40px 24px 24px;
+	width: 282px;
+	gap: 16px;
+	flex: none;
+	align-self: stretch;
+	flex-grow: 1;
+}
+.Big_Card_OurWork article {
+	width: 100%;
+}
+.Big_Card_OurWork button {
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 22px;
+	color: var(--textSecondary);
+	border: none;
+	background: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+	height: 30px;
+	border-radius: 8px;
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+	align-self: flex-end;
+}
+
+@media (max-width: 700px) {
+	.Big_Card_OurWork article {
+		align-items: center;
+		justify-content: center;
+	}
+
+	.Big_Card_OurWork article > h4 + p {
+		display: none !important;
+	}
+	.Big_Card_OurWork button {
+    display: none;
+  }
+}

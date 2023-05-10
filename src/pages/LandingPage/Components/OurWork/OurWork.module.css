@@ -1,0 +1,51 @@
+.OurWork {
+	display: flex;
+	flex-direction: column;
+	gap: 120px;
+	height: fit-content;
+	flex: none;
+	flex-grow: 0;
+}
+
+.Wrapper {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 0px;
+	gap: 24px;
+	flex: none;
+	flex-grow: 0;
+	flex-wrap: wrap;
+}
+
+.Wrapper > div {
+	flex: none;
+	flex-grow: 1;
+	gap: 20px;
+	display: flex;
+	flex-direction: column;
+}
+.Wrapper > div > span {
+	flex-direction: column;
+	display: flex;
+	gap: 20px;
+}
+
+@media (min-width: 1200px) {
+	.Wrapper > :nth-child(1) {
+		height: 229.33px;
+		flex-grow: 0;
+	}
+	.Wrapper > :nth-child(3) {
+		height: 229.33px;
+		flex-grow: 0;
+	}
+}
+@media (min-width: 700px) {
+	.Wrapper > div > span:first-of-type {
+		align-items: flex-end;
+	}
+	.Wrapper > div > span {
+		flex-direction: row;
+	}
+}

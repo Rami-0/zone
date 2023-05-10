@@ -51,6 +51,8 @@
 }
 .App {
 	text-align: center;
+	display: flex;
+	flex-direction: column;
 	font-family: "Poppins", sans-serif;
 	background: var(--bkgPraimary);
 }
@@ -90,7 +92,7 @@
 .mainColorText {
 	color: var(--textPraimary) !important;
 }
-.OrangeText{
+.OrangeText {
 	color: var(--MainOrange) !important;
 }
 
@@ -98,13 +100,16 @@
 	background: var(--bkgPraimary) !important;
 }
 
-.sections_title{
+.sections_title {
 	display: flex;
 	width: 45%;
 	flex-direction: column;
 	text-align: start;
 	align-items: flex-start;
 }
-.sections_title > h2 { 
-	margin: 16px 0 24px 0;
+.sections_title > h2,
+.sections_title > h4,
+.sections_title > h5,
+.sections_title > h6 {
+	margin: 16px 0 24px 0;	
 }
