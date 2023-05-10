@@ -13,6 +13,7 @@
 @media (max-width: 678px) {
   .LatestPostsContainer{
     justify-content: center ;
+    height: fit-content;
   }
   .title {
     align-self: center;

@@ -59,6 +59,12 @@
 	font-family: "Poppins", sans-serif;
 	background: var(--bkgPraimary);
 }
+.App > section > section{
+	padding-top: 180px;
+	padding-bottom: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
 .main_text {
 	color: var(--textPraimary) !important;
 	font-family: "Poppins";
@@ -123,6 +129,9 @@
 		text-align: center !important;
 		align-items: center !important;
 	}
+	.App > section > section{
+		padding-top: 120px;
+	}	
 	.container{
 		padding: 0 4%;
 	}

@@ -13,9 +13,9 @@ const LandingPage = () => {
 		<section>
 			<FirstSection/>
 			<SecondSection/>
-			<FAQ/>
 			<OurServicesAndWorkFlow/>
 			<OurWork/>
+			<FAQ/>
 			<LatestPosts/>
 
 		</section>

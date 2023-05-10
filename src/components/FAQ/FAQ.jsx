@@ -31,7 +31,7 @@ const FAQ = () => {
 	return (
 		<section className={css.sectionFAQ + " container"}>
 			<main>
-				<header className={css.header}>
+				<header className={css.header + " sections_title"}>
 					<p className="secondary_small_text">FAQS</p>
 					<h2>
 						Frequently Asked <br /> Questions
