@@ -3,8 +3,10 @@
 	flex-direction: column;
 	gap: 120px;
 	height: fit-content;
+	margin: 160px 0;
 	flex: none;
 	flex-grow: 0;
+	justify-content: center;
 }
 
 .Wrapper {
@@ -30,6 +32,27 @@
 	display: flex;
 	gap: 20px;
 }
+.OurWork > button {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 11px 12px;
+	gap: 8px;
+	width: 140px;
+	height: 48px;
+	border-radius: 8px;
+	background: none;
+	border: none;
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 15px;
+	line-height: 26px;
+	align-self: center;
+	flex-grow: 1;
+	cursor: pointer;
+}
 
 @media (min-width: 1200px) {
 	.Wrapper > :nth-child(1) {
@@ -40,6 +63,9 @@
 		height: 229.33px;
 		flex-grow: 0;
 	}
+	.OurWork > button:hover {
+		background: #fa531c35;
+	}
 }
 @media (min-width: 700px) {
 	.Wrapper > div > span:first-of-type {
@@ -47,5 +73,8 @@
 	}
 	.Wrapper > div > span {
 		flex-direction: row;
+	}
+	.OurWork > button {
+		align-self: flex-end;
 	}
 }

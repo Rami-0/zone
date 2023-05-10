@@ -3,6 +3,7 @@ import css from "./OurWork.module.css";
 import MediaQuery from "react-responsive";
 import Card_OurWork from "./Card/Card_OurWork";
 import img_1Bigcard from "../../assets/ourWork/IMG.png";
+import orangeArrow from "../../assets/orangeArrow.svg";
 import img_2Bigcard from "../../assets/ourWork/IMG2.png";
 import Gillette from "../../assets/ourWork/Gillette.svg";
 import Gillette2 from "../../assets/ourWork/Gillette2.svg";
@@ -53,7 +54,11 @@ const OurWork = () => {
 			<main className={css.Wrapper}>
 				<MediaQuery minWidth={768}>
 					<div>
-						<MainCard_ourWork head={"MARKETING"} title={"General Electric"} img={General_Electric} />
+						<MainCard_ourWork
+							head={"MARKETING"}
+							title={"General Electric"}
+							img={General_Electric}
+						/>
 					</div>
 					<div>
 						<span>
@@ -92,12 +97,17 @@ const OurWork = () => {
 						<MainCard_ourWork head={"WEB"} title={"Gillette"} img={Gillette2} />
 					</div>
 				</MediaQuery>
-				<MediaQuery maxWidth={767}>{arr.map(({head, img , title}) => {
-					return(
-						<MainCard_ourWork head={head} img={img} title={title}/>
-					);
-				})}</MediaQuery>
+				<MediaQuery maxWidth={767}>
+					{arr.map(({ head, img, title }) => {
+						return <MainCard_ourWork head={head} img={img} title={title} />;
+					})}
+				</MediaQuery>
 			</main>
+
+			<button className="OrangeText">
+				View All
+				<img src={orangeArrow} alt="" />
+			</button>
 		</section>
 	);
 };
