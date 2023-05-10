@@ -30,9 +30,7 @@
 
 @media (max-width:678px) {
 	.section{
-		padding: 180px 4%;
-		height: fit-content;
-
+		height: 85vh;
 	}
 	.section aside {
 		display: none;

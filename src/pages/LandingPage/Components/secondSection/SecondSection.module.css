@@ -121,9 +121,6 @@
 		padding: 0 !important;
 		margin-bottom: 50px;
 	}
-	.learnMore {
-
-	}
 	.infoAboutUs {
 		grid-template-columns: 100px 60px 1fr;
 	}
