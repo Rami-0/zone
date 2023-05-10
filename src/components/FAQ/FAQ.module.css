@@ -70,3 +70,16 @@
 	position: relative;
 	margin-bottom: 10px;
 }
+
+@media (max-width: 678px) {
+	.sectionFAQ > aside{
+		display: none;
+	}
+	.sectionFAQ > main {
+		width: 100%;
+		gap: 40px;
+	}
+	.QestionWrapper{
+		width: 100%;
+	}
+}

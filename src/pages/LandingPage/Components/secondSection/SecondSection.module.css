@@ -1,12 +1,19 @@
 .ourClients {
 	display: flex;
 	padding: 0 15%;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
+	gap: 70px;
+	padding-top: 0px !important;
+}
+.ourClients > span {
+	display: flex;
+	gap: 70px;
 }
 .section2 {
 	display: flex;
 	flex-direction: column;
+	padding-top: 60px !important;
 }
 .section2 > img {
 	border-radius: 10px;
@@ -15,6 +22,7 @@
 }
 .section2 > .main {
 	display: flex;
+	width: 100%;
 	align-items: center;
 	justify-content: space-between;
 }
@@ -53,40 +61,37 @@
 
 .infoAboutUs {
 	display: grid;
-  grid-template-columns: 100px 70px 370px;
-  grid-template-rows: auto;
-  grid-template-areas: 
-  "a b c"
-  ;
-  padding: 10px 0;
-  align-items: center;
+	grid-template-columns: 100px 70px 370px;
+	grid-template-rows: auto;
+	grid-template-areas: "a b c";
+	padding: 10px 0;
+	align-items: center;
 }
 
-.item_a{
-  grid-area: a;
+.item_a {
+	grid-area: a;
 }
-.item_b{
-  grid-area: b;
+.item_b {
+	grid-area: b;
 }
-.item_c{
-  grid-area: c;
+.item_c {
+	grid-area: c;
 }
 
 .infoAboutUs > .item_b {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: 0px 40px 0px 24px;
-  
-  width: 65px;
-  height: 92px;
-  }
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	padding: 0px 40px 0px 24px;
+
+	width: 65px;
+	height: 92px;
+}
 
 .infoAboutUs > .item_a > h2 {
 	position: relative;
 }
-
 
 .infoAboutUs > .item_a > h2::after {
 	content: "+";
@@ -102,7 +107,34 @@
 }
 .infoAboutUs > .item_b > hr {
 	width: 1px;
-  height: 92px;
-  top: 0;
-  border-color: rgba(145, 158, 171, 0.24);
+	height: 92px;
+	top: 0;
+	border-color: rgba(145, 158, 171, 0.24);
+}
+
+@media (max-width: 678px) {
+	.main {
+		flex-direction: column;
+	}
+	.main > article {
+		width: 100%;
+		padding: 0 !important;
+		margin-bottom: 50px;
+	}
+	.learnMore {
+
+	}
+	.infoAboutUs {
+		grid-template-columns: 100px 60px 1fr;
+	}
+	.infoAboutUs h2 {
+		font-size: 38px;
+	}
+	.ourClients{
+		overflow-x: scroll;
+		justify-content: flex-start;
+	}
+	.ourClients::-webkit-scrollbar{
+		display: none;
+	}
 }

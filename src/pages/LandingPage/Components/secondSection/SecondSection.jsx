@@ -31,17 +31,23 @@ const SecondSection = () => {
 	return (
 		<>
 			<section className={css.ourClients}>
-				<img src={spotify} alt="" />
-				<img src={slack} alt="" />
-				<img src={netflix} alt="" />
-				<img src={heroku} alt="" />
-				<img src={vimeo} alt="" />
-				<img src={airbnb} alt="" />
+				<span>
+					<img src={spotify} alt="" />
+					<img src={slack} alt="" />
+				</span>
+				<span>
+					<img src={netflix} alt="" />
+					<img src={heroku} alt="" />
+				</span>
+				<span>
+					<img src={vimeo} alt="" />
+					<img src={airbnb} alt="" />
+				</span>
 			</section>
 			<section className={css.section2 + " container"}>
 				<img src={ssImg} alt="photo" />
 				<div className={css.main}>
-					<article>
+					<article className="sections_title">
 						<p className="secondary_text">About Us</p>
 						<h2>Who We Are</h2>
 						<p className="secondary_mid_text">
@@ -51,7 +57,7 @@ const SecondSection = () => {
 							habitant morbi tristique senectus et netus et malesuada fames ac
 							turpis egestas.
 						</p>
-						<span>
+						<span className={css.learnMore}>
 							<p className="secondary_mid_text OrangeText">Learn more</p>
 							<img src={OA} alt="" />
 						</span>

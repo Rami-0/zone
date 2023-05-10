@@ -9,3 +9,14 @@
   padding: 0 10%;
   align-self: flex-start;
 }
+
+@media (max-width: 678px) {
+  .LatestPostsContainer{
+    justify-content: center ;
+    height: fit-content;
+  }
+  .title {
+    align-self: center;
+  }
+
+}

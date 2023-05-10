@@ -3,7 +3,7 @@
 	flex-direction: column;
 	gap: 120px;
 	height: fit-content;
-	margin: 160px 0;
+	margin: 120px 0;
 	flex: none;
 	flex-grow: 0;
 	justify-content: center;
@@ -33,7 +33,7 @@
 	gap: 20px;
 }
 .OurWork > button {
-	display: flex;
+	display: none;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
@@ -67,7 +67,11 @@
 		background: #fa531c35;
 	}
 }
-@media (min-width: 700px) {
+@media (min-width: 678px) {
+	.OurWork {
+		margin: 160px 0;
+	}
+
 	.Wrapper > div > span:first-of-type {
 		align-items: flex-end;
 	}
@@ -76,5 +80,6 @@
 	}
 	.OurWork > button {
 		align-self: flex-end;
+		display: flex;
 	}
 }
