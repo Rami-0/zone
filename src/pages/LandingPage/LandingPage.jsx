@@ -13,10 +13,10 @@ const LandingPage = () => {
 		<section>
 			<FirstSection/>
 			<SecondSection/>
-			<LatestPosts/>
 			<FAQ/>
 			<OurServicesAndWorkFlow/>
 			<OurWork/>
+			<LatestPosts/>
 
 		</section>
 	);

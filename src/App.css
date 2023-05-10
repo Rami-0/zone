@@ -38,6 +38,9 @@
 .container {
 	padding: 0 10%;
 }
+.container-mobile{
+	padding: 0 10%;
+}
 .hide {
 	opacity: 0 !important;
 	display: none;
@@ -122,5 +125,8 @@
 	}
 	.container{
 		padding: 0 4%;
+	}
+	.container-mobile{
+		padding: 0;
 	}
 }

@@ -9,7 +9,7 @@ const LatestPosts = () => {
 	return (
 		<section className={css.LatestPostsContainer}>
 			<h2 className={css.title}>Latest Posts</h2>
-			<Slide>
+			<Slide className="container-mobile">
 				<SliderComp />
 			</Slide>
 		</section>
@@ -19,8 +19,6 @@ const LatestPosts = () => {
 export default LatestPosts;
 
 const Slide = styled.div`
-	padding: 0 10%;
-
 	.slick-list,
 	.slick-track {
 		padding: 5rem 0;
@@ -71,6 +69,7 @@ const Slide = styled.div`
 	}
 
 	@media (max-width: 1024px) {
+
 		.center .slick-center .CARD {
 			transform: scale(1);
 			z-index: inherit;
@@ -85,7 +84,15 @@ const Slide = styled.div`
 	.slick-arrow::before {
 		display: none;
 	}
-	@media (max-width: 600) {
-		padding: 0 5%;
+
+	@media min-width: 600) {
+		.slick-list{
+			padding: 0;
+		}
+		.slick-slide{
+			width: 100px;
+		}
 	}
+
+
 `;
