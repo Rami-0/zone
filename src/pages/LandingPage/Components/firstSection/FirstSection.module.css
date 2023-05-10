@@ -27,3 +27,19 @@
 	line-height: 26px;
 	color: var(--textPraimary);
 }
+
+@media (max-width:678px) {
+	.section{
+		padding: 180px 4%;
+		height: fit-content;
+
+	}
+	.section aside {
+		display: none;
+	}
+	.main{
+		align-items: center;
+		text-align: center;
+		gap: 30px;
+	}
+}

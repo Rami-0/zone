@@ -36,7 +36,6 @@
 /* ----- */
 
 .container {
-	/* width: 80%; */
 	padding: 0 10%;
 }
 .hide {
@@ -52,6 +51,7 @@
 .App {
 	text-align: center;
 	display: flex;
+	justify-content: space-between;
 	flex-direction: column;
 	font-family: "Poppins", sans-serif;
 	background: var(--bkgPraimary);
@@ -111,5 +111,16 @@
 .sections_title > h4,
 .sections_title > h5,
 .sections_title > h6 {
-	margin: 16px 0 24px 0;	
+	margin: 16px 0 24px 0;
+}
+
+@media (max-width: 678px) {
+	.sections_title {
+		width: 100% !important;
+		text-align: center !important;
+		align-items: center !important;
+	}
+	.container{
+		padding: 0 4%;
+	}
 }

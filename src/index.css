@@ -4,13 +4,14 @@
 /* font-family: 'Poppins', sans-serif; */
 /* font-family: 'Barlow', sans-serif; */
 
-*, *::after, *::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 	transition: 0.3s;
 }
-
 
 body {
 	margin: 0;
@@ -73,4 +74,36 @@ h6 {
 	font-weight: 600;
 	font-size: 18px;
 	line-height: 28px;
+}
+
+@media (max-width: 678px) {
+	h1 {
+		font-family: "Barlow";
+		font-style: normal;
+		font-weight: 700;
+		font-size: 40px;
+		line-height: 50px;
+		text-align: center;
+	}
+	h2 {
+		font-family: "Barlow";
+		font-style: normal;
+		font-weight: 700;
+		font-size: 32px;
+		line-height: 42px;
+	}
+	h4 {
+		font-family: "Barlow";
+		font-style: normal;
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 30px;
+	}
+	h6 {
+		font-family: "Barlow";
+		font-style: normal;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 28px;
+	}
 }
