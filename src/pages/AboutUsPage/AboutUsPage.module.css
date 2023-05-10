@@ -1,0 +1,86 @@
+/* WhoWeAre */
+
+.WhoWeAre {
+	display: flex;
+	flex-direction: column;
+}
+
+.WhoWeAre > .top {
+	display: flex;
+	align-items: center;
+	gap: 130px;
+  flex-direction: column;
+}
+.WhoWeAre > .top > img {
+	display: none;
+}
+
+.WhoWeAre .top > div {
+	text-align: start;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 40px;
+}
+
+.WhoWeAre > .top article {
+	width: 100%;
+	gap: 24px;
+}
+
+.WhoWeAre .top > div > button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 11px 22px;
+	gap: 8px;
+	width: fit-content;
+	height: 48px;
+	border: 1px solid rgba(145, 158, 171, 0.32);
+	border-radius: 8px;
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+}
+.WhoWeAre .top > div > button p {
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 15px;
+	line-height: 26px;
+	color: var(--textPraimary);
+}
+
+.WhoWeAre .bottom {
+	display: flex;
+	flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  gap: 64px;
+}
+
+.medal_wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 10px;
+}
+
+@media (min-width: 678px) {
+  .WhoWeAre .top{
+    flex-direction: row;
+  }
+	.WhoWeAre .top > div {
+		width: 50%;
+		align-items: flex-start;
+	}
+	.WhoWeAre > .top > img {
+		display: block;
+	}
+	.WhoWeAre .bottom {
+    justify-content: space-between;
+    padding: 120px 144px 0px;
+    gap: 0;
+	}
+}
