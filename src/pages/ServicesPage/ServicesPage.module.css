@@ -79,9 +79,11 @@
 	padding-bottom: 80px !important;
 	gap: 122px;
 	flex-wrap: wrap;
+  justify-content: center;
 }
 .OfflineSEO .main .image {
-	width: 100%;
+	width: 295px;
+	height: 295px;
 }
 
 .OfflineSEO .aside {
@@ -134,7 +136,6 @@
 
 /* done */
 
-
 @media (min-width: 678px) {
 	.divider {
 		display: block;
@@ -159,5 +160,9 @@
 
 	.OfflineSEO .main {
 		padding: 120px 144px;
+	}
+	.OfflineSEO .main .image {
+		width: 466px;
+		height: 466px;
 	}
 }
