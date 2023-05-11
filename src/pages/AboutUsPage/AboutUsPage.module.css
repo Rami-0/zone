@@ -1,0 +1,236 @@
+/* WhoWeAre */
+
+.WhoWeAre {
+	display: flex;
+	flex-direction: column;
+}
+
+.WhoWeAre > .top {
+	display: flex;
+	align-items: center;
+	gap: 130px;
+	flex-direction: column;
+}
+.WhoWeAre > .top > img {
+	display: none;
+}
+
+.WhoWeAre .top > div {
+	text-align: start;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 40px;
+}
+
+.WhoWeAre > .top article {
+	width: 100%;
+	gap: 24px;
+}
+
+.WhoWeAre .top > div > button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 11px 22px;
+	gap: 8px;
+	width: fit-content;
+	height: 48px;
+	border: 1px solid rgba(145, 158, 171, 0.32);
+	border-radius: 8px;
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+}
+.WhoWeAre .top > div > button p {
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 15px;
+	line-height: 26px;
+	color: var(--textPraimary);
+}
+
+.WhoWeAre .bottom {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	padding: 80px 20px;
+	gap: 64px;
+}
+
+.medal_wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 10px;
+}
+
+/* our vision */
+
+.OurVision {
+	padding-bottom: 144px !important;
+}
+.OurVision .bkg {
+	min-height: 200px;
+	position: relative;
+
+	border-radius: 16px;
+
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	background-position: center !important;
+	background-size: cover !important;
+	background-repeat: no-repeat !important;
+}
+.OurVision .PlayButton {
+	display: grid;
+	place-items: center;
+	place-content: center;
+	padding: 20px;
+	background: var(--bkgSecondary);
+	border-radius: 100px;
+	border: 1px solid var(--bkgSecondary);
+}
+.OurVision h2 {
+	color: white !important;
+	position: absolute;
+	top: -80px;
+}
+
+.OurVision .content {
+	color: #ffffff96;
+	position: absolute;
+	bottom: -120px;
+}
+
+.OurCoreValues {
+	display: flex;
+	flex-direction: column;
+	gap: 80px;
+	padding-bottom: 144px !important;
+}
+
+.OurCoreValues .Wrapper {
+	display: flex;
+	flex-direction: row;
+	padding: 0px;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 64px;
+}
+.OurCoreValues .Wrapper .card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0px;
+	gap: 40px;
+}
+
+.OurCoreValues .Wrapper .card article {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0px;
+	gap: 16px;
+	min-width: 240px;
+}
+.OurCoreValues .Wrapper .card article * {
+	width: 240px;
+}
+
+.GreatTeamIsTheKey {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 144px;
+	gap: 80px;
+}
+
+.GreatTeamIsTheKey .top {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0px;
+	gap: 24px;
+	max-width: 550px;
+}
+
+.GreatTeamIsTheKey .top p {
+	width: 100%;
+}
+.GreatTeamIsTheKey .cards {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 24px;
+	justify-content: center;
+}
+
+.OurClients {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 80px;
+	padding-bottom: 120px !important;
+}
+
+.OurClients .wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0px;
+	gap: 64px;
+}
+
+.OurClients .wrapper span {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0px;
+	gap: 64px;
+	flex-wrap: wrap;
+}
+
+@media (min-width: 678px) {
+	.WhoWeAre .top {
+		flex-direction: row;
+	}
+	.WhoWeAre .top > div {
+		width: 50%;
+		align-items: flex-start;
+	}
+	.WhoWeAre > .top > img {
+		display: block;
+	}
+	.WhoWeAre .bottom {
+		justify-content: space-between;
+		padding: 120px 144px 0px;
+		gap: 0;
+	}
+	.OurVision {
+		padding-bottom: 0px !important;
+	}
+	.OurVision .bkg {
+		min-height: 648px;
+		padding: 0px 144px;
+	}
+	.OurVision h2 {
+		position: relative;
+	}
+	.OurVision .content {
+		color: #ffffff96;
+		width: 564px;
+		height: 72px;
+		position: relative;
+	}
+	.OurVision .PlayButton:hover {
+		transform: scale(1.07);
+		border: 1px solid #fa531c42;
+		cursor: pointer;
+	}
+}
