@@ -171,6 +171,31 @@
 	justify-content: center;
 }
 
+.OurClients {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 80px;
+	padding-bottom: 120px !important;
+}
+
+.OurClients .wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0px;
+	gap: 64px;
+}
+
+.OurClients .wrapper span {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0px;
+	gap: 64px;
+	flex-wrap: wrap;
+}
+
 @media (min-width: 678px) {
 	.WhoWeAre .top {
 		flex-direction: row;

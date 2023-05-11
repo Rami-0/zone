@@ -41,7 +41,7 @@
 		opacity: 1;
 	}
   .icon:hover{
-    border-radius: 10px`;
+    border-radius: 10px;
     background: rgba(165, 165, 165, 0.111);
   }
 }

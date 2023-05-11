@@ -3,11 +3,13 @@ import LatestPosts from "../../components/LatestPosts/LatestPosts";
 import FAQ from "./../../components/FAQ/FAQ";
 import TimeLine_2 from "./../../components/TimeLine/TimeLine_2";
 import css from "./AboutUsPage.module.css";
+import Button from "./../../components/Button/Button";
+import { ThemeContext } from "../../App";
+import Card_GreatTeam from "./component/Card_GreatTeam/Card_GreatTeam";
+
 import teams from "./assets/illustration_teams.svg";
 import lightArrow from "./assets/lightArrow.svg";
 import DarkArrow from "./assets/DarkArrow.svg";
-import Button from "./../../components/Button/Button";
-import { ThemeContext } from "../../App";
 
 import medal_1 from "./assets/icon_1.svg";
 import medal_2 from "./assets/icon_2.svg";
@@ -30,7 +32,14 @@ import img6 from "./assets/people/IMG-6.svg";
 import img7 from "./assets/people/IMG-7.svg";
 import img8 from "./assets/people/IMG.svg";
 
-import Card_GreatTeam from "./component/Card_GreatTeam/Card_GreatTeam";
+import airbnb from "./assets/OurClients/brand_color_airbnb.svg";
+import netflix from "./assets/OurClients/brand_color_netflix.svg";
+import google from "./assets/OurClients/brand_color_google.svg";
+import microsoft from "./assets/OurClients/brand_color_microsoft.svg";
+import slack from "./assets/OurClients/brand_color_slack.svg";
+import spotify from "./assets/OurClients/brand_color_spotify.svg";
+import tripadvisor from "./assets/OurClients/brand_color_tripadvisor.svg";
+import vimeo from "./assets/OurClients/brand_color_vimeo.svg";
 
 const cards_OurCoreValues = [
 	{
@@ -185,7 +194,9 @@ const AboutUsPage = () => {
 					})}
 				</div>
 			</section>
+
 			<TimeLine_2 />
+
 			<section className={css.GreatTeamIsTheKey + " container"}>
 				<div className={css.top}>
 					<h2>Great Team Is The Key</h2>
@@ -197,13 +208,31 @@ const AboutUsPage = () => {
 				<main className={css.cards}>
 					{cards_GreatTeamIsTheKey.map(({ img, name, department }) => {
 						return (
-							<Card_GreatTeam img={img} name={name} department={department}/>
+							<Card_GreatTeam img={img} name={name} department={department} />
 						);
 					})}
 				</main>
 			</section>
+
 			<section>Testimonials</section>
-			<section className={css.OurClients + " container"}></section>
+
+			<section className={css.OurClients + " container"}>
+				<h2>Our Clients</h2>
+				<div className={css.wrapper}>
+					<span>
+						<img src={spotify} alt="spotify" />
+						<img src={slack} alt="slack" />
+						<img src={netflix} alt="netflix" />
+						<img src={microsoft} alt="microsoft" />
+					</span>
+					<span>
+						<img src={vimeo} alt="vimeo" />
+						<img src={airbnb} alt="airbnb" />
+						<img src={google} alt="google" />
+						<img src={tripadvisor} alt="tripadvisor" />
+					</span>
+				</div>
+			</section>
 			<LatestPosts />
 			<FAQ />
 		</section>
