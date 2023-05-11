@@ -16,6 +16,30 @@ import medal_4 from "./assets/icon_4.svg";
 import RatioOverlay from "./assets/RatioOverlay.svg";
 import PlayIcon from "./assets/PlayIcon.svg";
 
+import popularity from "./assets/popularity.svg";
+import likePhoto from "./assets/likePhoto.svg";
+import transparency from "./assets/transparency.svg";
+import agreement from "./assets/agreement.svg";
+
+const cards_OurCoreValues = [
+	{
+		img: likePhoto,
+		h5: "Customer Satisfaction",
+	},
+	{
+		img: transparency,
+		h5: "Transparency",
+	},
+	{
+		img: popularity,
+		h5: "Reputation",
+	},
+	{
+		img: agreement,
+		h5: "Cooperation",
+	},
+];
+
 const AboutUsPage = () => {
 	const { themeDark } = useContext(ThemeContext);
 
@@ -88,7 +112,23 @@ const AboutUsPage = () => {
 				</div>
 			</section>
 
-			<section className={css.OurCoreValues + " container"}></section>
+			<section className={css.OurCoreValues + " container"}>
+				<h2>Our Core Values</h2>
+
+				<div className={css.Wrapper}>
+					{cards_OurCoreValues.map(({img, h5}) => {
+						return (
+							<span className={css.card}>
+								<img src={img} alt="image" />
+								<article>
+									<h5>{h5}</h5>
+									<p className="secondary_mid_text">Aenean urna dictum adipiscing nec, cras quisque.</p>
+								</article>
+							</span>
+						);
+					})}
+				</div>
+			</section>
 			<TimeLine_2 />
 			<section className={css.GreatTeamIsTheKey + " container"}></section>
 			<section>Testimonials</section>

@@ -70,7 +70,7 @@
 /* our vision */
 
 .OurVision {
-	height: 100vh;
+	padding-bottom: 144px !important;
 }
 .OurVision .bkg {
 	min-height: 200px;
@@ -95,6 +95,7 @@
 	padding: 20px;
 	background: var(--bkgSecondary);
 	border-radius: 100px;
+	border: 1px solid var(--bkgSecondary);
 }
 .OurVision h2 {
 	color: white !important;
@@ -107,6 +108,42 @@
 	position: absolute;
 	bottom: -120px;
 }
+
+.OurCoreValues {
+	display: flex;
+	flex-direction: column;
+	gap: 80px;
+	padding-bottom: 144px !important;
+}
+
+.OurCoreValues .Wrapper {
+	display: flex;
+	flex-direction: row;
+	padding: 0px;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 64px;
+}
+.OurCoreValues .Wrapper .card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0px;
+	gap: 40px;
+}
+
+.OurCoreValues .Wrapper .card article {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0px;
+	gap: 16px;
+	min-width: 240px;
+}
+.OurCoreValues .Wrapper .card article *{
+	width: 240px;
+}
+
 @media (min-width: 678px) {
 	.WhoWeAre .top {
 		flex-direction: row;
@@ -123,11 +160,14 @@
 		padding: 120px 144px 0px;
 		gap: 0;
 	}
+	.OurVision {
+		padding-bottom: 0px !important;
+	}
 	.OurVision .bkg {
 		min-height: 648px;
 		padding: 0px 144px;
 	}
-	.OurVision h2{
+	.OurVision h2 {
 		position: relative;
 	}
 	.OurVision .content {
@@ -135,5 +175,10 @@
 		width: 564px;
 		height: 72px;
 		position: relative;
+	}
+	.OurVision .PlayButton:hover{
+		transform: scale(1.07);
+		border: 1px solid #fa531c42;
+		cursor: pointer;
 	}
 }
