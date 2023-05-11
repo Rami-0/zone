@@ -13,6 +13,8 @@ import medal_1 from "./assets/icon_1.svg";
 import medal_2 from "./assets/icon_2.svg";
 import medal_3 from "./assets/icon_3.svg";
 import medal_4 from "./assets/icon_4.svg";
+import RatioOverlay from "./assets/RatioOverlay.svg";
+import PlayIcon from "./assets/PlayIcon.svg";
 
 const AboutUsPage = () => {
 	const { themeDark } = useContext(ThemeContext);
@@ -73,7 +75,19 @@ const AboutUsPage = () => {
 				</div>
 			</section>
 
-			<section className={css.OurVision + " container"}></section>
+			<section className={css.OurVision + " container"}>
+				<div className={css.bkg} style={{ background: `url(${RatioOverlay})` }}>
+					<h2>Our Vision</h2>
+					<div className={css.PlayButton}>
+						<img src={PlayIcon} alt="" />
+					</div>
+					<h4 className={css.content}>
+						Our vision offering the best product nulla vehicula tortor
+						scelerisque ultrices malesuada.
+					</h4>
+				</div>
+			</section>
+
 			<section className={css.OurCoreValues + " container"}></section>
 			<TimeLine_2 />
 			<section className={css.GreatTeamIsTheKey + " container"}></section>
