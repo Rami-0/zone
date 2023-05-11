@@ -21,6 +21,17 @@ import likePhoto from "./assets/likePhoto.svg";
 import transparency from "./assets/transparency.svg";
 import agreement from "./assets/agreement.svg";
 
+import img from "./assets/people/IMG-1.svg";
+import img2 from "./assets/people/IMG-2.svg";
+import img3 from "./assets/people/IMG-3.svg";
+import img4 from "./assets/people/IMG-4.svg";
+import img5 from "./assets/people/IMG-5.svg";
+import img6 from "./assets/people/IMG-6.svg";
+import img7 from "./assets/people/IMG-7.svg";
+import img8 from "./assets/people/IMG.svg";
+
+import Card_GreatTeam from "./component/Card_GreatTeam/Card_GreatTeam";
+
 const cards_OurCoreValues = [
 	{
 		img: likePhoto,
@@ -37,6 +48,49 @@ const cards_OurCoreValues = [
 	{
 		img: agreement,
 		h5: "Cooperation",
+	},
+];
+
+const cards_GreatTeamIsTheKey = [
+	{
+		img: img,
+		name: "Eleanor Pena",
+		department: "Markiting",
+	},
+	{
+		img: img2,
+		name: "Eleanor Pena",
+		department: "Markiting",
+	},
+	{
+		img: img3,
+		name: "Eleanor Pena",
+		department: "Markiting",
+	},
+	{
+		img: img4,
+		name: "Eleanor Pena",
+		department: "Markiting",
+	},
+	{
+		img: img5,
+		name: "Eleanor Pena",
+		department: "Markiting",
+	},
+	{
+		img: img6,
+		name: "Eleanor Pena",
+		department: "Markiting",
+	},
+	{
+		img: img7,
+		name: "Eleanor Pena",
+		department: "Markiting",
+	},
+	{
+		img: img8,
+		name: "Eleanor Pena",
+		department: "Markiting",
 	},
 ];
 
@@ -116,13 +170,15 @@ const AboutUsPage = () => {
 				<h2>Our Core Values</h2>
 
 				<div className={css.Wrapper}>
-					{cards_OurCoreValues.map(({img, h5}) => {
+					{cards_OurCoreValues.map(({ img, h5 }) => {
 						return (
 							<span className={css.card}>
 								<img src={img} alt="image" />
 								<article>
 									<h5>{h5}</h5>
-									<p className="secondary_mid_text">Aenean urna dictum adipiscing nec, cras quisque.</p>
+									<p className="secondary_mid_text">
+										Aenean urna dictum adipiscing nec, cras quisque.
+									</p>
 								</article>
 							</span>
 						);
@@ -130,7 +186,22 @@ const AboutUsPage = () => {
 				</div>
 			</section>
 			<TimeLine_2 />
-			<section className={css.GreatTeamIsTheKey + " container"}></section>
+			<section className={css.GreatTeamIsTheKey + " container"}>
+				<div className={css.top}>
+					<h2>Great Team Is The Key</h2>
+					<p className="secondary_mid_text">
+						Since wire-frame renderings are relatively simple and fast to
+						calculate, they are often used in cases
+					</p>
+				</div>
+				<main className={css.cards}>
+					{cards_GreatTeamIsTheKey.map(({ img, name, department }) => {
+						return (
+							<Card_GreatTeam img={img} name={name} department={department}/>
+						);
+					})}
+				</main>
+			</section>
 			<section>Testimonials</section>
 			<section className={css.OurClients + " container"}></section>
 			<LatestPosts />

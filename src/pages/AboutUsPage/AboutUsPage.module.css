@@ -140,8 +140,35 @@
 	gap: 16px;
 	min-width: 240px;
 }
-.OurCoreValues .Wrapper .card article *{
+.OurCoreValues .Wrapper .card article * {
 	width: 240px;
+}
+
+.GreatTeamIsTheKey {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 144px;
+	gap: 80px;
+}
+
+.GreatTeamIsTheKey .top {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0px;
+	gap: 24px;
+	max-width: 550px;
+}
+
+.GreatTeamIsTheKey .top p {
+	width: 100%;
+}
+.GreatTeamIsTheKey .cards {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 24px;
+	justify-content: center;
 }
 
 @media (min-width: 678px) {
@@ -176,7 +203,7 @@
 		height: 72px;
 		position: relative;
 	}
-	.OurVision .PlayButton:hover{
+	.OurVision .PlayButton:hover {
 		transform: scale(1.07);
 		border: 1px solid #fa531c42;
 		cursor: pointer;
