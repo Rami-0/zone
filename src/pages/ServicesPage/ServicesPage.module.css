@@ -1,0 +1,163 @@
+.OfflineSEO {
+	display: flex;
+	flex-direction: column;
+	padding: 0 !important;
+}
+.OfflineSEO .top {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 40px;
+	padding-top: 160px;
+	padding-bottom: 160px;
+}
+.OfflineSEO .top article {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0px;
+	gap: 24px;
+	max-width: 520px;
+}
+.OfflineSEO .top article p {
+	color: white !important;
+	opacity: 0.72;
+}
+.divider {
+	display: none;
+}
+.OfflineSEO .top .form {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 8px;
+	gap: 20px;
+	width: 100%;
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+}
+.OfflineSEO .top .form label {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 0px 0px 0px 14px;
+	width: 100%;
+	gap: 8px;
+	height: 56px;
+	background: rgba(145, 158, 171, 0.08);
+	backdrop-filter: blur(4px);
+	border-radius: 8px;
+}
+.email > input,
+.url > input {
+	background: none !important;
+	height: 100%;
+	border: none;
+	outline: none;
+	color: white;
+}
+.email > input:active,
+.url > input:active {
+	background: none !important;
+	border: none;
+	outline: none;
+}
+.email > input::placeholder,
+.url > input::placeholder {
+	color: #919eab;
+}
+.OfflineSEO .top button {
+	align-self: stretch;
+	margin: 0 !important;
+}
+
+.OfflineSEO .main {
+	display: flex;
+	align-items: center;
+	padding-top: 80px !important;
+	padding-bottom: 80px !important;
+	gap: 122px;
+	flex-wrap: wrap;
+}
+.OfflineSEO .main .image {
+	width: 100%;
+}
+
+.OfflineSEO .aside {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 0px;
+	gap: 40px;
+}
+
+.OfflineSEO .main article {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 0px;
+	gap: 24px;
+	text-align: start;
+	max-width: 466px;
+}
+
+.OfflineSEO .list li {
+	margin-left: 18px;
+	color: var(--textPraimary);
+}
+.OfflineSEO .list li::marker {
+	color: var(--MainOrange);
+}
+.OfflineSEO .main > div > button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 11px 22px;
+	gap: 8px;
+	width: fit-content;
+	height: 48px;
+	border: 1px solid rgba(145, 158, 171, 0.32);
+	border-radius: 8px;
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+}
+.OfflineSEO .main > div > button p {
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 15px;
+	line-height: 26px;
+	color: var(--textPraimary);
+}
+
+/* done */
+
+
+@media (min-width: 678px) {
+	.divider {
+		display: block;
+		width: 1px;
+		height: 28px;
+		border: 1px solid rgba(145, 158, 171, 0.24);
+	}
+	.OfflineSEO .top .form {
+		max-width: 760px;
+		height: 64px;
+		flex-direction: row;
+		background: rgba(145, 158, 171, 0.08);
+		backdrop-filter: blur(4px);
+		border-radius: 8px;
+	}
+	.OfflineSEO .top .form label {
+		height: 100%;
+		background: none;
+		backdrop-filter: none;
+		width: 288.5px;
+	}
+
+	.OfflineSEO .main {
+		padding: 120px 144px;
+	}
+}
