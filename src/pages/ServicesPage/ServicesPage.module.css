@@ -1,0 +1,329 @@
+.OfflineSEO {
+	display: flex;
+	flex-direction: column;
+	padding: 0 !important;
+}
+.OfflineSEO .top {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 40px;
+	padding-top: 160px;
+	padding-bottom: 160px;
+}
+.OfflineSEO .top article {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0px;
+	gap: 24px;
+	max-width: 520px;
+}
+.OfflineSEO .top article p {
+	color: white !important;
+	opacity: 0.72;
+}
+.divider {
+	display: none;
+}
+.OfflineSEO .top .form {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 8px;
+	gap: 20px;
+	width: 100%;
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+}
+.OfflineSEO .top .form label {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 0px 0px 0px 14px;
+	width: 100%;
+	gap: 8px;
+	height: 56px;
+	background: rgba(145, 158, 171, 0.08);
+	backdrop-filter: blur(4px);
+	border-radius: 8px;
+}
+.email > input,
+.url > input {
+	background: none !important;
+	height: 100%;
+	border: none;
+	outline: none;
+	color: white;
+}
+.email > input:active,
+.url > input:active {
+	background: none !important;
+	border: none;
+	outline: none;
+}
+.email > input::placeholder,
+.url > input::placeholder {
+	color: #919eab;
+}
+.OfflineSEO .top button {
+	align-self: stretch;
+	margin: 0 !important;
+}
+
+.OfflineSEO .main {
+	display: flex;
+	align-items: center;
+	padding-top: 80px !important;
+	padding-bottom: 80px !important;
+	gap: 122px;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.OfflineSEO .main .image {
+	width: 295px;
+	height: 295px;
+}
+
+.OfflineSEO .aside {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 0px;
+	gap: 40px;
+}
+
+.OfflineSEO .main article {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 0px;
+	gap: 24px;
+	text-align: start;
+	max-width: 466px;
+}
+
+.OfflineSEO .list li {
+	margin-left: 18px;
+	color: var(--textPraimary);
+}
+.OfflineSEO .list li::marker {
+	color: var(--MainOrange);
+}
+.OfflineSEO .main > div > button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 11px 22px;
+	gap: 8px;
+	width: fit-content;
+	height: 48px;
+	border: 1px solid rgba(145, 158, 171, 0.32);
+	border-radius: 8px;
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+}
+.OfflineSEO .main > div > button p {
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 15px;
+	line-height: 26px;
+	color: var(--textPraimary);
+}
+
+.ServicesInclude {
+	display: flex;
+	flex-direction: column;
+	gap: 80px;
+	align-items: center;
+	padding-bottom: 120px !important;
+}
+
+.ServicesInclude .top {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0px;
+	gap: 24px;
+	max-width: 480px;
+}
+.ServicesInclude .cards {
+	display: flex;
+	justify-content: center;
+	padding: 0px;
+	gap: 80px;
+	flex-wrap: wrap;
+}
+.ServicesInclude .cards .card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0px;
+	gap: 80px;
+	max-width: 330.67px;
+}
+
+.BenefitsAchieved {
+	display: flex;
+	background: var(--bkgSecondary);
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 120px !important;
+	gap: 120px;
+}
+
+.BenefitsAchieved .top {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0px;
+	gap: 24px;
+	max-width: 480px;
+}
+
+.BenefitsAchieved .WrapperCards {
+	display: flex;
+	flex-direction: column;
+	padding-left: 35px;
+	gap: 32px;
+	flex-wrap: wrap;
+}
+
+.BenefitsAchieved .WrapperCards .card {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	align-items: flex-start;
+	gap: 8px;
+	max-width: 301px;
+	text-align: start;
+}
+.BenefitsAchieved .card:nth-of-type(1){
+	order: 0;
+}
+.BenefitsAchieved .card:nth-of-type(3){
+	order: 1;
+}
+.BenefitsAchieved .card:nth-of-type(2){
+	order: 2;
+}
+
+
+.BenefitsAchieved .card:nth-of-type(4){
+	order: 4;
+}
+.BenefitsAchieved .card:nth-of-type(6){
+	order: 3;
+}
+.BenefitsAchieved .card:nth-of-type(5){
+	order: 5;
+}
+
+.BenefitsAchieved .img {
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+.BenefitsAchieved .img > img {
+	width: 80%;
+}
+
+.BenefitsAchieved .card::before {
+	width: 15px;
+	height: 15px;
+	content: " ";
+	font-size: 23px;
+	border-radius: 30px;
+	position: absolute;
+	left: -30px;
+	top: 8px;
+}
+.BenefitsAchieved .card:nth-of-type(5)::before,
+.BenefitsAchieved .card:nth-of-type(2)::before {
+	background: linear-gradient(135deg, #77f0ed 0%, #22b8cf 100%);
+}
+.BenefitsAchieved .card:nth-of-type(3)::before,
+.BenefitsAchieved .card:nth-of-type(4)::before {
+	background: linear-gradient(135deg, #69f290 0%, #0cd66e 100%);
+}
+.BenefitsAchieved .card:nth-of-type(1)::before,
+.BenefitsAchieved .card:nth-of-type(6)::before {
+	background: linear-gradient(135deg, #fdab76 0%, #fa541c 100%);
+}
+/* done */
+
+@media (min-width: 678px) {
+	.divider {
+		display: block;
+		width: 1px;
+		height: 28px;
+		border: 1px solid rgba(145, 158, 171, 0.24);
+	}
+	.OfflineSEO .top .form {
+		max-width: 760px;
+		height: 64px;
+		flex-direction: row;
+		background: rgba(145, 158, 171, 0.08);
+		backdrop-filter: blur(4px);
+		border-radius: 8px;
+	}
+	.OfflineSEO .top .form label {
+		height: 100%;
+		background: none;
+		backdrop-filter: none;
+		width: 288.5px;
+	}
+
+	.OfflineSEO .main {
+		padding: 120px 144px;
+	}
+	.OfflineSEO .main .image {
+		width: 466px;
+		height: 466px;
+	}
+
+	.BenefitsAchieved .WrapperCards {
+		display: grid;
+		grid-template-areas:
+			"s1 img s2"
+			"s3 img s4"
+			"s5 img s6";
+		grid-template-rows: auto;
+		row-gap: 80px;
+		grid-column-gap: 50px;
+		grid-row-gap: 80px;
+		column-gap: 50px;
+	}
+
+	.BenefitsAchieved .card:nth-of-type(even) {
+		text-align: start;
+	}
+	.BenefitsAchieved .card:nth-of-type(odd) {
+		align-items: flex-end;
+		text-align: end;
+	}
+
+	.BenefitsAchieved .card:nth-of-type(3) {
+		margin-right: 32px !important;
+	}
+
+	.BenefitsAchieved .card:nth-of-type(4) {
+		margin-left: 32px !important;
+	}
+
+	.BenefitsAchieved .card:nth-of-type(odd)::before {
+		right: -30px !important;
+		left: inherit;
+	}
+
+	.BenefitsAchieved .card:nth-of-type(odd)::before {
+		right: -30px !important;
+		left: inherit;
+	}
+	.BenefitsAchieved .img {
+		display: flex;
+	}
+}
