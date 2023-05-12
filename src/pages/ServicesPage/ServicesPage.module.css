@@ -139,7 +139,7 @@
 	flex-direction: column;
 	gap: 80px;
 	align-items: center;
-  padding-bottom: 120px !important;
+	padding-bottom: 120px !important;
 }
 
 .ServicesInclude .top {
@@ -166,6 +166,93 @@
 	max-width: 330.67px;
 }
 
+.BenefitsAchieved {
+	display: flex;
+	background: var(--bkgSecondary);
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 120px !important;
+	gap: 120px;
+}
+
+.BenefitsAchieved .top {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0px;
+	gap: 24px;
+	max-width: 480px;
+}
+
+.BenefitsAchieved .WrapperCards {
+	display: flex;
+	flex-direction: column;
+	padding-left: 35px;
+	gap: 32px;
+	flex-wrap: wrap;
+}
+
+.BenefitsAchieved .WrapperCards .card {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	align-items: flex-start;
+	gap: 8px;
+	max-width: 301px;
+	text-align: start;
+}
+.BenefitsAchieved .card:nth-of-type(1){
+	order: 0;
+}
+.BenefitsAchieved .card:nth-of-type(3){
+	order: 1;
+}
+.BenefitsAchieved .card:nth-of-type(2){
+	order: 2;
+}
+
+
+.BenefitsAchieved .card:nth-of-type(4){
+	order: 4;
+}
+.BenefitsAchieved .card:nth-of-type(6){
+	order: 3;
+}
+.BenefitsAchieved .card:nth-of-type(5){
+	order: 5;
+}
+
+.BenefitsAchieved .img {
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+.BenefitsAchieved .img > img {
+	width: 80%;
+}
+
+.BenefitsAchieved .card::before {
+	width: 15px;
+	height: 15px;
+	content: " ";
+	font-size: 23px;
+	border-radius: 30px;
+	position: absolute;
+	left: -30px;
+	top: 8px;
+}
+.BenefitsAchieved .card:nth-of-type(5)::before,
+.BenefitsAchieved .card:nth-of-type(2)::before {
+	background: linear-gradient(135deg, #77f0ed 0%, #22b8cf 100%);
+}
+.BenefitsAchieved .card:nth-of-type(3)::before,
+.BenefitsAchieved .card:nth-of-type(4)::before {
+	background: linear-gradient(135deg, #69f290 0%, #0cd66e 100%);
+}
+.BenefitsAchieved .card:nth-of-type(1)::before,
+.BenefitsAchieved .card:nth-of-type(6)::before {
+	background: linear-gradient(135deg, #fdab76 0%, #fa541c 100%);
+}
 /* done */
 
 @media (min-width: 678px) {
@@ -196,5 +283,47 @@
 	.OfflineSEO .main .image {
 		width: 466px;
 		height: 466px;
+	}
+
+	.BenefitsAchieved .WrapperCards {
+		display: grid;
+		grid-template-areas:
+			"s1 img s2"
+			"s3 img s4"
+			"s5 img s6";
+		grid-template-rows: auto;
+		row-gap: 80px;
+		grid-column-gap: 50px;
+		grid-row-gap: 80px;
+		column-gap: 50px;
+	}
+
+	.BenefitsAchieved .card:nth-of-type(even) {
+		text-align: start;
+	}
+	.BenefitsAchieved .card:nth-of-type(odd) {
+		align-items: flex-end;
+		text-align: end;
+	}
+
+	.BenefitsAchieved .card:nth-of-type(3) {
+		margin-right: 32px !important;
+	}
+
+	.BenefitsAchieved .card:nth-of-type(4) {
+		margin-left: 32px !important;
+	}
+
+	.BenefitsAchieved .card:nth-of-type(odd)::before {
+		right: -30px !important;
+		left: inherit;
+	}
+
+	.BenefitsAchieved .card:nth-of-type(odd)::before {
+		right: -30px !important;
+		left: inherit;
+	}
+	.BenefitsAchieved .img {
+		display: flex;
 	}
 }

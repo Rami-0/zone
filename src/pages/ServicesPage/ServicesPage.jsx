@@ -19,6 +19,8 @@ import ic_marketing_report from "./assets/icon/ic_marketing_report.svg";
 import ic_marketing_social_media from "./assets/icon/ic_marketing_social_media.svg";
 import ic_marketing_statistics from "./assets/icon/ic_marketing_statistics.svg";
 
+import illustration_benefits from "./assets/illustration_benefits.svg";
+
 const services = [
 	{
 		img: ic_marketing_statistics,
@@ -134,8 +136,68 @@ const ServicesPage = () => {
 					})}
 				</div>
 			</section>
-			<section className={css.BenefitsAchieved}></section>
+
+			<section className={css.BenefitsAchieved + " container"}>
+				<div className={css.top}>
+					<h2>Benefits Achieved</h2>
+					<p className="secondary_mid_text">
+						Nunc nonummy metus. Donec elit libero, sodales nec, volutpat a,
+						suscipit non, turpis.
+					</p>
+				</div>
+
+				<div className={css.WrapperCards}>
+
+					<span className={css.card} style={{ gridArea: "s1" }}>
+						<h5>Online Media Management</h5>
+						<p className="secondary_text">
+							Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec,
+							nisi.
+						</p>
+					</span>
+
+					<span className={css.card} style={{ gridArea: "s2" }}>
+						<h5>Online Media Management</h5>
+						<p className="secondary_text">
+							Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec,
+							nisi.
+						</p>
+					</span>
+
+					<span className={css.card} style={{ gridArea: "s3" }}>
+						<h5>Online Media Management</h5>
+						<p className="secondary_text">Suspendisse enim turpis</p>
+					</span>
+
+					<span className={css.card} style={{ gridArea: "s4" }}>
+						<h5>Online Media Management</h5>
+						<p className="secondary_text">Suspendisse enim turpis</p>
+					</span>
+
+					<span className={css.card} style={{ gridArea: "s5" }}>
+						<h5>Online Media Management</h5>
+						<p className="secondary_text">
+							Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec,
+							nisi.
+						</p>
+					</span>
+
+					<span className={css.card} style={{ gridArea: "s6" }}>
+						<h5>Online Media Management</h5>
+						<p className="secondary_text">
+							Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec,
+							nisi.
+						</p>
+					</span>
+
+					<span className={css.img} style={{ gridArea: "img" }}>
+						<img src={illustration_benefits} alt="illustration_benefits" />
+					</span>
+
+				</div>
+			</section>
 			<TimeLine />
+			<section>Testimonials {/* add component here */}</section>
 			<LatestPosts />
 		</section>
 	);
