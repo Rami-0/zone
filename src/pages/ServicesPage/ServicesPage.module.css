@@ -79,7 +79,7 @@
 	padding-bottom: 80px !important;
 	gap: 122px;
 	flex-wrap: wrap;
-  justify-content: center;
+	justify-content: center;
 }
 .OfflineSEO .main .image {
 	width: 295px;
@@ -132,6 +132,38 @@
 	font-size: 15px;
 	line-height: 26px;
 	color: var(--textPraimary);
+}
+
+.ServicesInclude {
+	display: flex;
+	flex-direction: column;
+	gap: 80px;
+	align-items: center;
+  padding-bottom: 120px !important;
+}
+
+.ServicesInclude .top {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0px;
+	gap: 24px;
+	max-width: 480px;
+}
+.ServicesInclude .cards {
+	display: flex;
+	justify-content: center;
+	padding: 0px;
+	gap: 80px;
+	flex-wrap: wrap;
+}
+.ServicesInclude .cards .card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0px;
+	gap: 80px;
+	max-width: 330.67px;
 }
 
 /* done */
