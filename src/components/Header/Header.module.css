@@ -85,3 +85,12 @@
   align-items: center;
 }
 
+
+
+
+.white_Theme_bkg{
+	background: #fff !important;
+}
+.white_text *{
+	color: #fff !important;
+}

@@ -107,6 +107,7 @@
 
 .scrolled {
 	background: var(--bkgPraimary) !important;
+	box-shadow: 0 8px 24px 0 rgba(52, 53, 57, 0.2);
 }
 
 .sections_title {

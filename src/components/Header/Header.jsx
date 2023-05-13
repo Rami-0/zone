@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect, useMemo, useState } from "react";
 import { useTranslation, Trans } from "react-i18next";
 import { ThemeContext } from "../../App";
 import css from "./Header.module.css";
@@ -33,11 +33,10 @@ const options = {
 const Header = () => {
 	const { t, i18n } = useTranslation();
 	const { stylesVars, themeDark, ToggleTheme } = useContext(ThemeContext);
-	const [PagesStatus, setPagesStatus] = useState(false);
-	const location = useLocation();
 	const navigate = useNavigate();
 	const [PagesOpen, setPagesOpen] = useState(false);
 	const [isScrolled, setIsScrolled] = useState(false);
+	const { pathname } = useLocation();
 
 	useEffect(() => {
 		window.addEventListener("scroll", handleScroll);
@@ -57,12 +56,32 @@ const Header = () => {
 	const handlePagesOpen = () => {
 		setPagesOpen(!PagesOpen);
 	};
+
+	const isServices = useMemo(() => {
+		if (pathname == "/Services") {
+			// setService(true);
+			return true;
+		} else {
+			// setService(false);
+			return false;
+		}
+	}, [pathname]);
+
 	return (
 		<header
 			id="Header"
 			className={`${css.header} container ${isScrolled ? "scrolled" : ""}`}>
-			<nav>
-				<img src={themeDark ? LogoDark : LogoLight} alt="" />
+			<nav className={isServices && !isScrolled ? ` ${css.white_text}` : " "}>
+				<img
+					src={
+						themeDark
+							? LogoDark
+							: isServices && !isScrolled
+							? LogoDark
+							: LogoLight
+					}
+					alt="logo"
+				/>
 				<Link to={"/"} className={css.nav_links}>
 					{t("header.Home")}
 				</Link>
@@ -73,7 +92,13 @@ const Header = () => {
 					{t("header.Pages")}
 					<img
 						className={PagesOpen ? css.Rotate_180_degree : null}
-						src={themeDark ? downArrowDark : downArrowLight}
+						src={
+							themeDark
+								? downArrowDark
+								: isServices && !isScrolled
+								? downArrowDark
+								: downArrowLight
+						}
 						alt=""
 					/>
 				</p>
@@ -102,13 +127,24 @@ const Header = () => {
 					text={
 						<img
 							style={{ width: "18px", height: 18 + "px" }}
-							src={themeDark ? moon : sun}
+							src={themeDark ? moon : isServices && !isScrolled ? moon : sun}
 							alt="screenMode"
 						/>
 					}
 				/>
 				<Button
-					text={<img src={themeDark ? SearchDark : SearchLight} alt="search" />}
+					text={
+						<img
+							src={
+								themeDark
+									? SearchDark
+									: isServices && !isScrolled
+									? SearchDark
+									: SearchLight
+							}
+							alt="search"
+						/>
+					}
 				/>
 				<Button
 					onClick={() =>
@@ -117,14 +153,24 @@ const Header = () => {
 					text={
 						<img
 							className={css.darkLightMode_icon}
-							src={themeDark ? LanguageDark : LanguageLight}
+							src={
+								themeDark
+									? LanguageDark
+									: isServices && !isScrolled
+									? LanguageDark
+									: LanguageLight
+							}
 							alt="language"
 						/>
 					}
 				/>
-				<Button text={<p className="main_text">{t("header.Login")}</p>} />
 				<Button
-					type={!themeDark ? "dark" : "white"}
+					className={isServices && !isScrolled ? css.white_text : " "}
+					text={<p className="main_text">{t("header.Login")}</p>}
+				/>
+				<Button
+					className={isServices && !isScrolled ? css.white_Theme_bkg : ""}
+					type={isServices && !isScrolled ? " " : themeDark ? "dark" : "white"}
 					text={t("header.JoinUs")}
 				/>
 			</div>
