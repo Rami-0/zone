@@ -39,9 +39,6 @@ const Footer = () => {
 	const { themeDark } = useContext(ThemeContext);
 	return (
 		<footer className={`${css.footer}`}>
-
-
-
 			<section className={`container ${css.SEO_Analysis_bkg}`}>
 				<div className={`${css.SEO_Analysis}`}>
 					<section>
@@ -99,8 +96,6 @@ const Footer = () => {
 				</div>
 			</section>
 
-
-
 			<section className={css.NewsletterSection + " container"}>
 				<div>
 					<img src={Mail} alt="" />
@@ -112,14 +107,16 @@ const Footer = () => {
 					</div>
 				</div>
 				<form onSubmit={handleSubmit}>
-					<input type="email" placeholder="Enter your email" className={css.input} />
+					<input
+						type="email"
+						placeholder="Enter your email"
+						className={css.input}
+					/>
 					<Button text={"sign Up"} type={"orange"} />
 				</form>
 			</section>
 
-
 			<section className={`${css.infoSection} container`}>
-
 				<div className={css.top}>
 					<div className={css.main}>
 						<img src={themeDark ? logodark : logolight} alt="" />
@@ -145,9 +142,13 @@ const Footer = () => {
 							<p className="secondary_text mainColorText">655 Schaefer Dale</p>
 						</span>
 					</div>
-					<div className={css.last}>
+					<div className={css.form}>
 						<form>
-							<input type="email" className={css.input} placeholder="Email address" />
+							<input
+								type="email"
+								className={css.input}
+								placeholder="Email address"
+							/>
 							<Button
 								text={
 									<svg
@@ -162,7 +163,7 @@ const Footer = () => {
 										/>
 									</svg>
 								}
-                type={"orange"}
+								type={"orange"}
 							/>
 						</form>
 					</div>
@@ -176,8 +177,6 @@ const Footer = () => {
 					</div>
 				</div>
 			</section>
-
-
 		</footer>
 	);
 };
