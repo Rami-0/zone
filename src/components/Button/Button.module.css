@@ -10,18 +10,12 @@
 	cursor: pointer;
 	margin: 0 5px;
 
-  
 	font-weight: 600;
 	font-family: "Poppins";
 	font-style: normal;
 	font-weight: 600;
 	font-size: 15px;
 	line-height: 26px;
-}
-
-.button:hover {
-	background: var(--bkgSecondary);
-	opacity: 0.6;
 }
 
 /* .button:active{
@@ -39,4 +33,11 @@
 .button[type="orange"] {
 	background: var(--MainOrange) !important;
 	color: white;
+}
+
+@media (min-width: 900px) {
+	.button:hover {
+		background: var(--bkgSecondary);
+		opacity: 0.6;
+	}
 }

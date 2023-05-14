@@ -18,9 +18,7 @@
   display: flex;
   align-items: center;
   position: relative;
-}
-.header > nav > * {
-  margin-right: 48px;
+  gap: 48px;
 }
 .header > nav > a:hover { 
   color: var(--textPraimary);

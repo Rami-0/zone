@@ -14,6 +14,9 @@ import LanguageDark from "./assets/language-dark.svg";
 import sun from "./assets/lightMode.svg";
 import moon from "./assets/darkMode.svg";
 import Button from "./../Button/Button";
+import MediaQuery from "react-responsive";
+import burger_icon_light from "./assets/burger_icon.svg";
+import burger_icon_dark from "./assets/burger_icon_dark.svg";
 
 const lngs = {
 	en: { nativeName: "EN" },
@@ -71,109 +74,157 @@ const Header = () => {
 		<header
 			id="Header"
 			className={`${css.header} container ${isScrolled ? "scrolled" : ""}`}>
-			<nav className={isServices && !isScrolled ? ` ${css.white_text}` : " "}>
-				<img
-					src={
-						themeDark
-							? LogoDark
-							: isServices && !isScrolled
-							? LogoDark
-							: LogoLight
-					}
-					alt="logo"
-				/>
-				<Link to={"/"} className={css.nav_links}>
-					{t("header.Home")}
-				</Link>
-				<Link to={"/Components"} className={css.nav_links}>
-					{t("header.Components")}
-				</Link>
-				<p className={css.Pages} onClick={handlePagesOpen}>
-					{t("header.Pages")}
+			<MediaQuery maxWidth={1200}>
+				<nav className={css.mobile_header}>
 					<img
-						className={PagesOpen ? css.Rotate_180_degree : null}
 						src={
 							themeDark
-								? downArrowDark
+								? LogoDark
 								: isServices && !isScrolled
-								? downArrowDark
-								: downArrowLight
+								? LogoDark
+								: LogoLight
 						}
-						alt=""
+						alt="logo"
 					/>
-				</p>
-				<Link to={"/Documentation"} className={css.nav_links}>
-					{t("header.Documentation")}
-				</Link>
-			</nav>
-			<div className={css.Pages_options + ` ${PagesOpen ? "" : "hide"}`}>
-				{Object.keys(options).map((option) => (
+				</nav>
+				<div className={css.header_left}>
 					<Button
-						key={option}
-						href={options[option]}
-						text={t(`header.${option}`)}
-						onClick={() => {
-							navigate(options[option]);
-							setPagesOpen(false);
-						}}>
-						{option}
-					</Button>
-				))}
-			</div>
+						text={
+							<img
+								src={
+									themeDark
+										? burger_icon_dark
+										: isServices && !isScrolled
+										? burger_icon_dark
+										: burger_icon_light
+								}
+								alt="search"
+							/>
+						}
+					/>
+					<Button
+						text={
+							<img
+								src={
+									themeDark
+										? SearchDark
+										: isServices && !isScrolled
+										? SearchDark
+										: SearchLight
+								}
+								alt="search"
+							/>
+						}
+					/>
+				</div>
+			</MediaQuery>
+			<MediaQuery minWidth={1201}>
+				<nav className={isServices && !isScrolled ? ` ${css.white_text}` : " "}>
+					<img
+						src={
+							themeDark
+								? LogoDark
+								: isServices && !isScrolled
+								? LogoDark
+								: LogoLight
+						}
+						alt="logo"
+					/>
+					<Link to={"/"} className={css.nav_links}>
+						{t("header.Home")}
+					</Link>
+					<Link to={"/Components"} className={css.nav_links}>
+						{t("header.Components")}
+					</Link>
+					<p className={css.Pages} onClick={handlePagesOpen}>
+						{t("header.Pages")}
+						<img
+							className={PagesOpen ? css.Rotate_180_degree : null}
+							src={
+								themeDark
+									? downArrowDark
+									: isServices && !isScrolled
+									? downArrowDark
+									: downArrowLight
+							}
+							alt=""
+						/>
+					</p>
+					<Link to={"/Documentation"} className={css.nav_links}>
+						{t("header.Documentation")}
+					</Link>
+				</nav>
+				<div className={css.Pages_options + ` ${PagesOpen ? "" : "hide"}`}>
+					{Object.keys(options).map((option) => (
+						<Button
+							key={option}
+							href={options[option]}
+							text={t(`header.${option}`)}
+							onClick={() => {
+								navigate(options[option]);
+								setPagesOpen(false);
+							}}>
+							{option}
+						</Button>
+					))}
+				</div>
 
-			<div className={css.header_left}>
-				<Button
-					onClick={ToggleTheme}
-					text={
-						<img
-							style={{ width: "18px", height: 18 + "px" }}
-							src={themeDark ? moon : isServices && !isScrolled ? moon : sun}
-							alt="screenMode"
-						/>
-					}
-				/>
-				<Button
-					text={
-						<img
-							src={
-								themeDark
-									? SearchDark
-									: isServices && !isScrolled
-									? SearchDark
-									: SearchLight
-							}
-							alt="search"
-						/>
-					}
-				/>
-				<Button
-					onClick={() =>
-						i18n.changeLanguage(i18n.resolvedLanguage === "en" ? "ru" : "en")
-					}
-					text={
-						<img
-							className={css.darkLightMode_icon}
-							src={
-								themeDark
-									? LanguageDark
-									: isServices && !isScrolled
-									? LanguageDark
-									: LanguageLight
-							}
-							alt="language"
-						/>
-					}
-				/>
-				<Button
-					className={isServices && !isScrolled ? css.white_text : " "}
-					text={<p className="main_text">{t("header.Login")}</p>}
-				/>
-				<Button
-					className={isServices && !isScrolled ? css.white_Theme_bkg : ""}
-					type={isServices && !isScrolled ? " " : themeDark ? "dark" : "white"}
-					text={t("header.JoinUs")}
-				/>
-			</div>
+				<div className={css.header_left}>
+					<Button
+						onClick={ToggleTheme}
+						text={
+							<img
+								style={{ width: "18px", height: 18 + "px" }}
+								src={themeDark ? moon : isServices && !isScrolled ? moon : sun}
+								alt="screenMode"
+							/>
+						}
+					/>
+					<Button
+						text={
+							<img
+								src={
+									themeDark
+										? SearchDark
+										: isServices && !isScrolled
+										? SearchDark
+										: SearchLight
+								}
+								alt="search"
+							/>
+						}
+					/>
+					<Button
+						onClick={() =>
+							i18n.changeLanguage(i18n.resolvedLanguage === "en" ? "ru" : "en")
+						}
+						text={
+							<img
+								className={css.darkLightMode_icon}
+								src={
+									themeDark
+										? LanguageDark
+										: isServices && !isScrolled
+										? LanguageDark
+										: LanguageLight
+								}
+								alt="language"
+							/>
+						}
+					/>
+					<Button
+						className={isServices && !isScrolled ? css.white_text : " "}
+						text={<p className="main_text">{t("header.Login")}</p>}
+					/>
+					<Button
+						className={isServices && !isScrolled ? css.white_Theme_bkg : ""}
+						type={
+							isServices && !isScrolled ? " " : themeDark ? "dark" : "white"
+						}
+						text={t("header.JoinUs")}
+					/>
+				</div>
+			</MediaQuery>
 		</header>
 	);
 };
