@@ -35,6 +35,32 @@
 
 /* ----- */
 
+
+/* scroll bar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+	margin-right: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #161c24;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fa541c;
+	border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(145, 158, 171, 1);
+}
+
+/*  */
+
 .container {
 	padding: 0 10%;
 }
